@@ -1,0 +1,44 @@
+.plus-minus-btn--rentals,
+.plus-minus-btn--chcom {
+  width: 45px;
+  height: 45px;
+  box-sizing: border-box;
+  border: 0;
+  cursor: pointer;
+  font-size: 30px;
+  color: #fff;
+}
+
+.plus-minus-btn--rentals:last-child,
+.plus-minus-btn--chcom:last-child {
+  margin-left: 5px;
+}
+
+.plus-minus-btn--rentals:disabled,
+.plus-minus-btn--rentals:disabled:hover,
+.plus-minus-btn--rentals:disabled:focus,
+.plus-minus-btn--rentals:disabled:active,
+.plus-minus-btn--chcom:disabled,
+.plus-minus-btn--chcom:disabled:hover,
+.plus-minus-btn--chcom:disabled:focus,
+.plus-minus-btn--chcom:disabled:active {
+  cursor: not-allowed;
+  color: #eee;
+  background-color: #aaa;
+}
+
+.plus-minus-btn--rentals {
+  background-color: #02a18f;
+}
+
+.plus-minus-btn--rentals:hover {
+  background-color: #02c7b0;
+}
+
+.plus-minus-btn--chcom {
+  background-color: #e26811;
+}
+
+.plus-minus-btn--chcom:hover {
+  background-color: #f27013;
+}

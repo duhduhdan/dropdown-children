@@ -1,0 +1,16 @@
+.number--rentals,
+.number--chcom {
+  padding: 16px 14px;
+  width: 20px;
+  text-align: center;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.number--rentals {
+  color: #02a18f;
+}
+
+.number--chcom {
+  color: #e26811;
+}
