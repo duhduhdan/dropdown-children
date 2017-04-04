@@ -23,33 +23,27 @@ class Dropdown extends Component {
   }
 
   render() {
-    const trigger = this.renderDropdownTrigger()
-    const content = this.renderDropdownContent()
-
-    return (<section className="dropdown">{trigger}{content}</section>)
-  }
-
-  isDropdownTrigger(child) {
-    return child.type.displayName === 'DropdownTrigger'
+    return (
+      <section className="dropdown">
+        {this.renderDropdownTrigger()}
+        {this.renderDropdownContent()}
+      </section>
+    )
   }
 
   renderDropdownTrigger() {
     const addClick = {onClick: this.toggleActive}
 
     return Children.map(this.props.children, child =>
-      this.isDropdownTrigger(child) && cloneElement(child, addClick)
+      child.type === DropdownTrigger && cloneElement(child, addClick)
     )
-  }
-
-  isDropdownContent(child) {
-    return child.type.displayName === 'DropdownContent'
   }
 
   renderDropdownContent() {
     const addActive = {active: this.state.active}
 
     return Children.map(this.props.children, child =>
-      this.isDropdownContent(child) && cloneElement(child, addActive)
+      child.type === DropdownContent && cloneElement(child, addActive)
     )
   }
 

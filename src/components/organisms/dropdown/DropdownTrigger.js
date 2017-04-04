@@ -10,6 +10,4 @@ DropdownTrigger.propTypes = {
   children: PropTypes.node
 }
 
-DropdownTrigger.displayName = 'DropdownTrigger'
-
 export default DropdownTrigger

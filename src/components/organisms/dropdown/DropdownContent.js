@@ -16,6 +16,4 @@ DropdownContent.propTypes = {
   active: PropTypes.bool
 }
 
-DropdownContent.displayName = 'DropdownContent'
-
 export default DropdownContent
